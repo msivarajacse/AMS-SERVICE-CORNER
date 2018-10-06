@@ -70,7 +70,9 @@ if(isset($_SESSION["ADMINID"]))
 
             </div>
 
-            
+            <div class='blur text-white'>
+			<p>Developed by Praveenram Balachandran</p>
+			</div>
             <div class="col-sm-3">
             </div>
 

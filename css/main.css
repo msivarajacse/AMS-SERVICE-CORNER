@@ -26,7 +26,7 @@
    /* for background image  */
    
    .bgimg {
-       background: url(../img/background.jpg);
+       background: url(../img/maxresdefault.jpg);
        height: auto;
        min-height: 100%;
        background-position: center;
@@ -36,7 +36,7 @@
    }
    
    .bgimg4 {
-       background: url(../img/background.jpg);
+       background: url(../img/maxresdefault.jpg);
        height: auto;
        min-height: 100%;
        background-position: center;
@@ -231,4 +231,9 @@
    
    .text-black {
        color: #000;
+   }
+   
+   .card.blur-box {
+       border: 1px solid #fff;
+       margin-bottom: 8px;
    }

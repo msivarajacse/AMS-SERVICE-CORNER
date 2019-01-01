@@ -45,7 +45,8 @@ if(isset($_POST["submit"])){
     if($db->query($sql))
         {
             
-            header("location:authkey.php?mes=keychanged");
+                             echo "<script>window.open('authkey.php?mes=keychanged', '_self')</script>";
+
         }
 }
 ?>

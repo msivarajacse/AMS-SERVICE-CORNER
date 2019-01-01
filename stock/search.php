@@ -175,7 +175,7 @@ echo $previous;
 
             <?php
 
-$sql="SELECT * FROM stock_category LIMIT $limit,5;";
+$sql="SELECT * FROM stock_category ;";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {

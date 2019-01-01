@@ -124,7 +124,7 @@ include("nav.php");
 
         <?php
 
-$sql="SELECT * FROM stock_details WHERE STOCK_CATEGORY LIKE '%$category%' LIMIT $limit,5";
+$sql="SELECT * FROM stock_details WHERE STOCK_CATEGORY LIKE '%$category%' LIMIT $limit,10";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {
@@ -175,7 +175,7 @@ echo $previous;
 
             <?php
 
-$sql="SELECT * FROM stock_category LIMIT $limit,5;";
+$sql="SELECT * FROM stock_category ";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {

@@ -123,7 +123,7 @@ include("nav.php");
     </thead>
     <tbody>
 <?php
-$sql="SELECT * FROM stock_details ORDER BY STOCK_ID DESC LIMIT 0,5;";
+$sql="SELECT * FROM stock_details";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {
@@ -172,7 +172,7 @@ $i++;
 
             <?php
 
-$sql="SELECT * FROM stock_category LIMIT $limit,5;";
+$sql="SELECT * FROM stock_category ";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {

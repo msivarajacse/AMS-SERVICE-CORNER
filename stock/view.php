@@ -113,7 +113,7 @@ include("nav.php");
 
         <?php
 
-$sql="SELECT * FROM stock_details ORDER BY STOCK_ID DESC LIMIT 0,5;";
+$sql="SELECT * FROM stock_details ORDER BY STOCK_ID DESC LIMIT 0,10;";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {
@@ -158,7 +158,7 @@ echo "<div class='card blur-box'>
 
             <?php
 
-$sql="SELECT * FROM stock_category LIMIT $limit,5;";
+$sql="SELECT * FROM stock_category ;";
 $res=$db->query($sql);
 if($res->num_rows>0)
  {
@@ -193,26 +193,6 @@ if (isset($_POST["categoryadd"])) {
 
 
 
-<?php
-if (isset($_POST["submit"])) {
-    $BRAND=$_POST["BRAND"];
-    $MODEL=$_POST["MODEL"];
-    $MRP=$_POST["MRP"];
-    $APPROXIMATE_DISCOUNT_PRICE=$_POST["APPROXIMATE_DISCOUNT_PRICE"];
-    $CATEGORY=$_POST["CATEGORY"];
-    $QUANTITY=$_POST["QUANTITY"];
-
-$sql="INSERT INTO stock_details (STOCK_ID, STOCK_BRAND, STOCK_MODEL, STOCK_MRP, STOCK_DISCOUNT, STOCK_CATEGORY, STOCK_QUANTITY, STOCK_LOG) VALUES (NULL, '$BRAND', '$MODEL', '$MRP', '$APPROXIMATE_DISCOUNT_PRICE', '$CATEGORY', '$QUANTITY', NOW());";
-
-if ($db->query($sql)) {
-    echo "<script> window.open('index.php?mes=Added Successfully', '_self')</script>";
-}
-else{
-    echo "<script> window.open('index.php?mes=Some Error', '_self')</script>";
-}
-
-}
-?>
         </div>
         </div>
         </div>
